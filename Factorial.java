@@ -1,12 +1,29 @@
 public class Factorial { 
-        public int getFactorial(int number) {
+	public static void main(String[] args){
+
+System.out.print(factorial(10));
+System.out.print(power(5, 2));
+
+}
 	
-	int factorial = 1;
-	for(int counter =1; counter<=number; ++counter){
+public static int factorial(int number) {
+	int factorial =1;
+	for(int counter =1; counter<= number; ++counter){
 
 		factorial *= counter;}
 	
 		return factorial;
 	
 	}
+public static int power(int number1, int number2){
+	double raisetopower;
+
+	raisetopower = Math.pow(number1, number2);
+
+	return raisetopower;
+}
+
+
+
+
 }
